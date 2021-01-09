@@ -36,8 +36,8 @@
     border-radius: 10px;
     height: 100px;
     width: 97%;
-    position: relative;
-    left: 10px;
+    position: fixed;
+    left: 10px;  bottom: 5%;    
     font-size: 10em;
     -moz-border-bottom-colors: #a8ff51;
     -moz-border-left-colors: #a8ff51;
@@ -275,8 +275,8 @@
     </style>
     
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.1/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.1/js/materialize.min.js"></script>
     <script src="https://unpkg.com/nlp_compromise@latest/builds/nlp_compromise.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/nlp_compromise/6.5.3/nlp_compromise.min.js"></script>
   
@@ -314,7 +314,7 @@
       $("#sentence1").append(adj);
       $("#sentence1").append(" "); 
   
-    var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+    var flickerAPI = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
     $.getJSON( flickerAPI, {
       tags: adj,
       tagmode: "any",
@@ -336,7 +336,7 @@
       $("#sentence2").append(per);
       $("#sentence2").append(" "); 
   
-    var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+    var flickerAPI = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
     $.getJSON( flickerAPI, {
       tags: per,
       tagmode: "any",
@@ -359,7 +359,7 @@
       $("#sentence3").append(object);
       $("#sentence3").append(" ");  
   
-    var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+    var flickerAPI = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
     $.getJSON( flickerAPI, {
       tags: object,
       tagmode: "any",
@@ -381,7 +381,7 @@
       $("#sentence4").append(verb);
       $("#sentence4").append(" ");  
   
-    var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+    var flickerAPI = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
     $.getJSON( flickerAPI, {
       tags: verb,
       tagmode: "any",
