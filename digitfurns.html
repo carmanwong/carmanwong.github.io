@@ -1,0 +1,1457 @@
+﻿<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from carmanwong.portfolio.site/android-app-tweets-around-you by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Nov 2021 13:10:58 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+
+  <title> [React.JS HTML CSS Webpage] DigiFurns. - Kai Man Carman Wong Creative Desginer and Technologist</title>
+
+  <style id="root-styles">
+    :root {
+      --color: #000;
+      --accent-color: #001fff;
+      --link-color: #000;
+      --surface-color: rgba(0, 0, 0, 0);
+      --background-color: #8f8f8f;
+      --grid-width: 1100px;
+      --default-color: #000;
+      --default-accent-color: #001fff;
+      --default-link-color: #000;
+      --font-family: Nunito;
+    }
+  </style>
+  <style id="global-styles">
+    .g-1-125-2 {
+      letter-spacing: -0.01em;
+      line-height: 1.3;
+      font-size: 2em;
+    }
+  </style>
+
+  <style>
+    /* Inline CSS styles */
+
+    .slider {
+      width: 100%;
+      max-width: 800px;
+      height: 350px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+    }
+
+    .slide {
+      width: 100%;
+      max-width: 800px;
+      height: 350px;
+      position: absolute;
+      transition: all 0.5s;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .btn {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      padding: 10px;
+      border: 1px solid black;
+      /* thin black border */
+      border-radius: 50%;
+      z-index: 10;
+      cursor: pointer;
+      background-color: #fff;
+      font-size: 18px;
+      outline: none;
+      /* Removes the default focus outline */
+    }
+
+    .btn:active,
+    .btn:focus {
+      /* Changed on click or when focused */
+      background-color: #ddd;
+      /* Change to desired color on click */
+      transform: scale(1.1);
+      border-color: #000;
+      /* Ensures border stays black on click */
+    }
+
+    .btn-prev {
+      top: 45%;
+      left: 2%;
+    }
+
+    .btn-next {
+      top: 45%;
+      right: 2%;
+    }
+  </style>
+
+  <style>
+    /* Inline CSS styles for slider2 */
+
+    .slider2 {
+      width: 100%;
+      max-width: 800px;
+      height: 550px;
+      position: relative;
+      overflow: clip;
+      border-radius: 15px;
+    }
+
+    .slide2 {
+      width: 100%;
+      max-width: 800px;
+      /* height: 450px; */
+      position: absolute;
+      transition: all 0.5s;
+    }
+
+    .slide2 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .btn2 {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      padding: 10px;
+      border: 1px solid black;
+      /* thin black border */
+      border-radius: 50%;
+      z-index: 10;
+      cursor: pointer;
+      background-color: #fff;
+      font-size: 18px;
+      outline: none;
+      /* Removes the default focus outline */
+    }
+
+    .btn2:active,
+    .btn2:focus {
+      /* Changed on click or when focused */
+      background-color: #ddd;
+      /* Change to desired color on click */
+      transform: scale(1.1);
+      border-color: #000;
+      /* Ensures border stays black on click */
+    }
+
+    .btn-prev2 {
+      top: 45%;
+      left: 2%;
+    }
+
+    .btn-next2 {
+      top: 45%;
+      right: 2%;
+    }
+  </style>
+
+  <style>
+    /* Apply a Google Font */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    .button-container {
+      margin: 20px;
+    }
+
+    .button-container a {
+      text-decoration: none;
+    }
+
+    .button-container button {
+      font-family: 'Roboto', sans-serif;
+      font-size: 22px;
+      /* Increased font size for a larger button */
+      font-weight: bold;
+      color: #000;
+      background-color: yellow;
+      /* Default button color */
+      border: 3px solid black;
+      /* Thicker border for a larger appearance */
+      padding: 15px 30px;
+      /* Increased padding for a larger button */
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      /* Transition for background-color only */
+      outline: none;
+      /* Remove the default focus outline */
+    }
+
+    /* Change the background color when the button is pressed */
+    .button-container button:active {
+      background-color: #90ee90;
+      /* Light green color when the button is pressed */
+    }
+  </style>
+
+  <meta name="description" content="Kai Man Carman Wong Creative Desginer and Technologist" />
+  <meta property="og:title" content="Kai Man Carman Wong Creative Desginer and Technologist" />
+  <meta property="og:description" content="Creative Desginer and Technologist" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:image"
+    content="https://carbon-media.accelerator.net/0000000luJ1/d4OwXqHdTjaeA9YAdv3Ezg;890x630.jpeg" />
+
+  <link rel="stylesheet" href="https://static.cmcdn.net/23/1.0.37/styles/all.css" />
+  <link rel="stylesheet" href="https://static.cmcdn.net/23/1.0.37/styles/vendor/swiper.css" />
+
+  <link rel="stylesheet" href="styles/fonts.css" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body class="site desktop  " data-min-contrast="0.05">
+  <div class="page project sidenaved loading" style="background:#ffffff; ">
+
+
+
+    <span id="navigation_5122999_4892176" class="navigation surface sticky column  sidenav" on-insert="nav:setup">
+
+
+
+      <header class="navigation column stacked">
+        <a href="index.html">
+          <h1 class="logo_41468562" style="font-size:4.39em;line-height:1em;color:#000000;" data-box="141x100">Kai Man
+            Carman Wong Creative Desginer and Technologist</h1>
+          <style>
+            h1.logo_41468562 {
+              --scale: 0.4;
+              width: calc(141px * var(--scale));
+              height: calc(100px * var(--scale));
+              background: center / contain no-repeat url('https://carbon-media.accelerator.net/0000000luJ1/g44iCCaOzALe8N2fXFOEhL;56x40.png?auto=webp');
+              text-indent: -500vw;
+              white-space: nowrap;
+              overflow: hidden;
+              background-image: -webkit-image-set(url('https://carbon-media.accelerator.net/0000000luJ1/g44iCCaOzALe8N2fXFOEhL;56x40.png?auto=webp') 1x, url('https://carbon-media.accelerator.net/0000000luJ1/g44iCCaOzALe8N2fXFOEhL;112x80.png?auto=webp') 2x);
+              ;
+            }
+          </style>
+        </a>
+
+        <nav class="sticky scrollable" style="font-size:1.9em;">
+          <style>
+            #navigation_5122999_4892176 {
+              --link-color: #000000;
+              --default-link-color: #000000;
+              background-color: #cbdcf3;
+            }
+
+            #navigation_5122999_4892176 .overlay {
+              --surface-color: #000000;
+              background: var(--overlay-background-color, #000000);
+            }
+          </style>
+          <div class="scrollbar" autohide><span class="handle"></span></div>
+          <div class="content">
+            <a class="link_000000004e00b72b00000000000000a3" href="index.html">Work</a><a
+              class="link_000000004e00b72b00000000000000a7" href="about.html">About</a>
+            <hr />
+            <a class="link_000000004e00b72b00000000000000e6 project_link" href="google-eliza-talk.html">[Python Chatbot
+              IBM Watson AI] Google Eliza Talk</a><a class="link_000000004e00b72b0000000000000071 project_link"
+              href="ibm-watson-twitter-data-3d-print-3d-model-arduino-python-graduation-thesis-solution-averag.html">[IBM
+              Watson, Twitter Data, 3D Print, 3D Model, Arduino, Python] Solution Average</a><a
+              class="link_000000004e00b72b0000000000000015 project_link"
+              href="html-javascrip-api-natural-language-process.html">[HTML, JavaScrip, API] Natural Language
+              Process</a><a class="link_000000004e00b72b0000000000000037 project_link"
+              href="android-app-tweets-around-you.html">[Android App] Tweets Around You</a><a
+              class="link_000000004e00b72b00000000000004dc project_link"
+              href="supercollider-music-live-coding.html">[SuperCollider] Music Live Coding</a><a
+              class="link_000000004e00b72b0000000000000002 project_link"
+              href="mobile-app-vounteer-matching-platform.html">[Mobile App] Vounteer Matching Platform</a><a
+              class="link_000000004e00b72b0000000000000175 project_link" href="following-messages.html">[IOS Firebase
+              User Authentication UI] Following Messages</a><a
+              class="link_000000004e00b72b000000000000079a project_link"
+              href="methodology-for-the-uncertain-future.html">Methodology for the Uncertain Future</a>
+          </div>
+          <div class="cutoff">
+            <div class="gradient"></div>
+        </nav>
+
+      </header>
+
+      <footer class="surface has-links ">
+        <div class="content">
+          <div class="copyright">&#xA9; Kai Man Carman Wong Creative Desginer and Technologist</div>
+
+
+          <span class="branding"></span>
+
+
+
+
+
+          <div class="links">
+
+            <a style="--accent-color:#171515" target="_blank" href="https://github.com/carmanwong"
+              class="social icon gitHub solid circle"></a>
+
+            <a style="--accent-color:#007bb5" target="_blank" href="https://www.linkedin.com/in/kaimwong/"
+              class="social icon linkedIn solid circle"></a>
+
+          </div>
+
+        </div>
+      </footer>
+
+
+
+
+
+
+
+      <div class="hamburger navIcon" on-click="nav:toggle">
+        <svg class="icon" viewBox="0 0 28 28">
+          <g stroke-width="2" stroke-linecap="round" stroke-miterlimit="10">
+            <line class="one" x1="4" y1="6" x2="24" y2="6"></line>
+            <line class="two" x1="4" y1="14" x2="24" y2="14"></line>
+            <line class="three" x1="4" y1="22" x2="24" y2="22"></line>
+          </g>
+        </svg>
+      </div>
+
+
+    </span>
+
+
+    <div class="guts">
+      <div class="content blocks grid animated" style="background-color: #f9f9f9;">
+
+        <div class="block_000000004e00b72b000000000000095b block framed align-x-center align-y-center animated header"
+          style="padding:80px 0px 0px;" on-insert="block:setup">
+          <style>
+            .block_000000004e00b72b000000000000095b>.content {
+              display: grid;
+              grid-template-columns: repeat(0, 1fr);
+            }
+
+            #item_000000004e00b72b000000000000095b_1 {
+              letter-spacing: -0.04em;
+              line-height: 1.41;
+              font-family: Manrope;
+              --secondary-font-family: Manrope;
+              font-size: 3.1em;
+            }
+
+            #item_000000004e00b72b000000000000095b_2 {}
+
+            #item_000000004e00b72b000000000000095b_3 {}
+
+            .phone .block_000000004e00b72b000000000000095b>.content {
+              grid-template-columns: repeat(0, 1fr);
+            }
+
+            .phone #item_000000004e00b72b000000000000095b_1 {
+              font-size: 7vw;
+            }
+
+            .phone #item_000000004e00b72b000000000000095b_2 {
+              font-size: 5vw;
+            }
+
+            .phone #item_000000004e00b72b000000000000095b_3 {
+              margin: 0px 0 20px 0;
+            }
+          </style>
+
+
+          <div class="background" style="">
+
+          </div>
+
+
+          <div class="content">
+
+
+            <div id="item_000000004e00b72b000000000000095b_1" class="item g-1-125-1 text heading">
+              <h1 class="ql-align-center" style="  
+              --font-family: Nunito;
+              --site-margin: 40px;
+              --container-height: 800px;
+              --cover-height: 100vh;
+              --main-top: 0px;
+              --browser-bar-height: 0px;
+              --swiper-theme-color: #007aff;
+              --swiper-navigation-size: 44px;
+              --sidenav-width: 240px;
+              --footer-height: 97px;
+              --container-width: 543px;
+              --cover-width: calc(100vw - var(--sidenav-width));
+              color: var(--color);
+              font-family: var(--font-family);
+              --accent-color: #001fff;
+              --link-color: #000000;
+              text-align: center;
+              letter-spacing: -0.01em;
+              line-height: 1.3;
+              font-weight: 400;
+              -webkit-font-smoothing: antialiased;
+              padding: 0;
+              margin: 0;
+              font-size: 1em;
+              overflow-wrap: break-word;
+              word-break: break-word;">[React.JS HTML CSS Webpage]
+              </h1>
+              <h1 style="  
+              --font-family: Nunito;
+              --site-margin: 40px;
+              --container-height: 800px;
+              --cover-height: 100vh;
+              --main-top: 0px;
+              --browser-bar-height: 0px;
+              --swiper-theme-color: #007aff;
+              --swiper-navigation-size: 44px;
+              --sidenav-width: 240px;
+              --footer-height: 97px;
+              --container-width: 543px;
+              --cover-width: calc(100vw - var(--sidenav-width));
+              color: var(--color);
+              font-family: var(--font-family);
+              --accent-color: #001fff;
+              --link-color: #000000;
+              text-align: center;
+              letter-spacing: -0.01em;
+              line-height: 1.3;
+              font-weight: 400;
+              -webkit-font-smoothing: antialiased;
+              padding: 0;
+              margin: 0;
+              font-size: 1em;
+              overflow-wrap: break-word;
+              word-break: break-word;"> Building Interactive Experience with Tracking<br /><br />
+                <img src="images/df/df_icon.png" alt="digitfurns icon" style="height: 60px;" />
+              </h1><br /><br /><br />
+            </div>
+            <div id="item_000000004e00b72b000000000000095b_2" class="item g-1-125-2 text subheading">
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+
+        <div class="block_000000004e00b72b0000000000000960 block framed align-x-center align-y-center animated header"
+          style="padding:80px 0px 0px;" on-insert="block:setup">
+          <style>
+            .block_000000004e00b72b0000000000000960>.content {
+              display: grid;
+              grid-template-columns: repeat(0, 1fr);
+            }
+
+            #item_000000004e00b72b0000000000000960_1 {
+              letter-spacing: -0.04em;
+              line-height: 1.41;
+              font-family: Manrope;
+              --secondary-font-family: Manrope;
+              font-size: 3.1em;
+            }
+
+            #item_000000004e00b72b0000000000000960_2 {}
+
+            #item_000000004e00b72b0000000000000960_3 {}
+
+            .phone .block_000000004e00b72b0000000000000960>.content {
+              grid-template-columns: repeat(0, 1fr);
+            }
+
+            .phone #item_000000004e00b72b0000000000000960_1 {
+              font-size: 7vw;
+            }
+
+            .phone #item_000000004e00b72b0000000000000960_2 {
+              font-size: 5vw;
+            }
+
+            .phone #item_000000004e00b72b0000000000000960_3 {
+              margin: 0px 0 20px 0;
+            }
+          </style>
+          <div class="background" style="">
+          </div>
+          <div class="content">
+            <div id="item_000000004e00b72b0000000000000960_1" class="item g-1-125-1 text heading">
+              <h1 class="ql-align-center"> </h1>
+            </div>
+            <div id="item_000000004e00b72b0000000000000960_2" class="item g-1-125-2 text subheading">
+              <h2><br></h2>
+              <h2 class="ql-align-center"><span style="letter-spacing: normal; color: rgb(0, 0, 0);">I made an online
+                  shopping website, with a mouse and eye gaze tracking going at the same time, that users can act as
+                  customers to shop for furniture online. With the trackers, their activities and movements are tracked
+                  for further analysis.</span></h2>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- demo image 1 -->
+
+
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <div style="text-align: center;">
+          <img class="lazy" data-src="images/df/demo3.png" width="50%" alt="Demo Image" />
+        </div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+
+
+
+
+        <div class="block_000000004e00b72b0000000000000960 block framed align-x-center align-y-center animated header"
+          style="padding:80px 0px 0px;" on-insert="block:setup">
+          <style>
+            .block_000000004e00b72b0000000000000960>.content {
+              display: grid;
+              grid-template-columns: repeat(0, 1fr);
+            }
+
+            #item_000000004e00b72b0000000000000960_1 {
+              letter-spacing: -0.04em;
+              line-height: 1.41;
+              font-family: Manrope;
+              --secondary-font-family: Manrope;
+              font-size: 3.1em;
+            }
+
+            #item_000000004e00b72b0000000000000960_2 {}
+
+            #item_000000004e00b72b0000000000000960_3 {}
+
+            .phone .block_000000004e00b72b0000000000000960>.content {
+              grid-template-columns: repeat(0, 1fr);
+            }
+
+            .phone #item_000000004e00b72b0000000000000960_1 {
+              font-size: 7vw;
+            }
+
+            .phone #item_000000004e00b72b0000000000000960_2 {
+              font-size: 5vw;
+            }
+
+            .phone #item_000000004e00b72b0000000000000960_3 {
+              margin: 0px 0 20px 0;
+            }
+          </style>
+          <div class="background" style="">
+          </div>
+          <div class="content">
+            <div id="item_000000004e00b72b0000000000000960_1" class="item g-1-125-1 text heading">
+              <h1 class="ql-align-center">The Online Store Pages</h1>
+            </div>
+            <div id="item_000000004e00b72b0000000000000960_2" class="item g-1-125-2 text subheading">
+              <h2><br></h2>
+              <h2 class="ql-align-center"><span style="letter-spacing: normal; color: rgb(0, 0, 0);">The online store
+                  contains 5 subpages for shopping, a registration page, signup page and shopping cart. It uses React.JS
+                  with HTML, CSS and JavaScript, with a Node.js backend for collecting data.</span></h2>
+            </div>
+          </div>
+        </div>
+        <br /> <br /> <br /> <br /> <br /> <br /> <br />
+
+        <!-- slide -->
+        <div style="text-align: center; padding-left: 20%; padding-right: 20%;">
+          <br /> <br />
+          <div class="slider2">
+            <!-- slide 1 -->
+            <div class="slide2">
+              <img src="images/df/section1.png" alt="" />
+            </div>
+
+            <!-- slide 2 -->
+            <div class="slide2">
+              <img src="images/df/section2.png" alt="" />
+            </div>
+            `
+            <!-- slide 3 -->
+            <div class="slide2">
+              <img src="images/df/section3.png" alt="" />
+            </div>
+
+            <!-- slide 4 -->
+            <div class="slide2">
+              <img src="images/df/section4.png" alt="" />
+            </div>
+
+            <!-- slide   -->
+            <div class="slide2">
+              <img src="images/df/section5.png" alt="" />
+            </div>
+
+            <!-- slide   -->
+            <div class="slide2">
+              <img src="images/df/section6.png" alt="" />
+            </div>
+
+            <!-- slide   -->
+            <div class="slide2">
+              <img src="images/df/section7.png" alt="" />
+            </div>
+
+            <!-- Control buttons -->
+            <button class="btn btn-next2"> > </button>
+            <button class="btn btn-prev2">
+              < </button>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+        <!-- Gmae title -->
+
+        <br /> <br /> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <div class="block_000000004e00b72b0000000000000960 block framed align-x-center align-y-center animated header"
+          style="padding:80px 0px 0px;" on-insert="block:setup">
+          <style>
+            .block_000000004e00b72b0000000000000960>.content {
+              display: grid;
+              grid-template-columns: repeat(0, 1fr);
+            }
+
+            #item_000000004e00b72b0000000000000960_1 {
+              letter-spacing: -0.04em;
+              line-height: 1.41;
+              font-family: Manrope;
+              --secondary-font-family: Manrope;
+              font-size: 3.1em;
+            }
+
+            #item_000000004e00b72b0000000000000960_2 {}
+
+            #item_000000004e00b72b0000000000000960_3 {}
+
+            .phone .block_000000004e00b72b0000000000000960>.content {
+              grid-template-columns: repeat(0, 1fr);
+            }
+
+            .phone #item_000000004e00b72b0000000000000960_1 {
+              font-size: 7vw;
+            }
+
+            .phone #item_000000004e00b72b0000000000000960_2 {
+              font-size: 5vw;
+            }
+
+            .phone #item_000000004e00b72b0000000000000960_3 {
+              margin: 0px 0 20px 0;
+            }
+          </style>
+          <div class="background" style="">
+          </div>
+          <div class="content">
+            <div id="item_000000004e00b72b0000000000000960_1" class="item g-1-125-1 text heading">
+              <h1 class="ql-align-center">The Eye Gaze Tracking and Instruction</h1>
+            </div>
+            <div id="item_000000004e00b72b0000000000000960_2" class="item g-1-125-2 text subheading">
+              <h2><br></h2>
+              <h2 class="ql-align-center"><span style="letter-spacing: normal; color: rgb(0, 0, 0);">For the tracking,
+                  users have to consent to the collecting of data, and be introduced to the description of the game,
+                  with a demo credit card, and open the camera permission. Then they can start acting like shopping for
+                  the study.</span></h2> <br /> <br />
+              <br /> <br /> <br /> <br /> <br />
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- slide -->
+        <div style="text-align: center; padding-left: 25%; padding-right: 25%;">
+          <br /> <br />
+          <div class="slider">
+            <!-- slide 1 -->
+            <div class="slide">
+              <img src="images/df/game1.png" alt="" />
+            </div>
+
+            <!-- slide 2 -->
+            <div class="slide">
+              <img src="images/df/game2.png" alt="" />
+            </div>
+            `
+            <!-- slide 3 -->
+            <div class="slide">
+              <img src="images/df/game3.png" alt="" />
+            </div>
+
+            <!-- slide 4 -->
+            <div class="slide">
+              <img src="images/df/game4.png" alt="" />
+            </div>
+
+            <!-- Control buttons -->
+            <button class="btn2 btn-next"> > </button>
+            <button class="btn2 btn-prev">
+              < </button>
+          </div>
+
+        </div>
+
+
+
+        <br /><br /><br /><br /><br /><br /><br /><br />
+
+
+
+
+        <div class="block_000000004e00b72b0000000000000960 block framed align-x-center align-y-center animated header"
+          style="padding:80px 0px 0px;" on-insert="block:setup">
+          <style>
+            .block_000000004e00b72b0000000000000960>.content {
+              display: grid;
+              grid-template-columns: repeat(0, 1fr);
+            }
+
+            #item_000000004e00b72b0000000000000960_1 {
+              letter-spacing: -0.04em;
+              line-height: 1.41;
+              font-family: Manrope;
+              --secondary-font-family: Manrope;
+              font-size: 3.1em;
+            }
+
+            #item_000000004e00b72b0000000000000960_2 {}
+
+            #item_000000004e00b72b0000000000000960_3 {}
+
+            .phone .block_000000004e00b72b0000000000000960>.content {
+              grid-template-columns: repeat(0, 1fr);
+            }
+
+            .phone #item_000000004e00b72b0000000000000960_1 {
+              font-size: 7vw;
+            }
+
+            .phone #item_000000004e00b72b0000000000000960_2 {
+              font-size: 5vw;
+            }
+
+            .phone #item_000000004e00b72b0000000000000960_3 {
+              margin: 0px 0 20px 0;
+            }
+          </style>
+          <div class="background" style="">
+          </div>
+          <div class="content">
+            <div id="item_000000004e00b72b0000000000000960_1" class="item g-1-125-1 text heading">
+              <h1 class="ql-align-center">Security Awareness Study</h1>
+            </div>
+            <div id="item_000000004e00b72b0000000000000960_2" class="item g-1-125-2 text subheading">
+              <h2><br></h2>
+              <h2 class="ql-align-center"><span style="letter-spacing: normal; color: rgb(0, 0, 0);">The pixel points of
+                  where the users look at, and their mouse movements were tracked as x, y coordinates. It was then
+                  resembled again showing where they look or the mouse stopped on the screen. Twelve participants' data
+                  were collected. You can see how users interact differently with different habits. It is also for
+                  analyzing the security design of the form.
+
+                </span></h2>
+            </div>
+          </div>
+        </div>
+        <!-- demo 2 forms  -->
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <div style="text-align: center;">
+          <img class="lazy" data-src="images/df/demo4.png" width="95%" alt="Demo Image" />
+        </div>
+
+      </div>
+
+      <div class="block_000000004e00b72b0000000000000960 block framed align-x-center align-y-center animated header"
+        style="padding:80px 0px 0px;" on-insert="block:setup">
+        <style>
+          .block_000000004e00b72b0000000000000960>.content {
+            display: grid;
+            grid-template-columns: repeat(0, 1fr);
+          }
+
+          #item_000000004e00b72b0000000000000960_1 {
+            letter-spacing: -0.04em;
+            line-height: 1.41;
+            font-family: Manrope;
+            --secondary-font-family: Manrope;
+            font-size: 3.1em;
+          }
+
+          #item_000000004e00b72b0000000000000960_2 {}
+
+          #item_000000004e00b72b0000000000000960_3 {}
+
+          .phone .block_000000004e00b72b0000000000000960>.content {
+            grid-template-columns: repeat(0, 1fr);
+          }
+
+          .phone #item_000000004e00b72b0000000000000960_1 {
+            font-size: 7vw;
+          }
+
+          .phone #item_000000004e00b72b0000000000000960_2 {
+            font-size: 5vw;
+          }
+
+          .phone #item_000000004e00b72b0000000000000960_3 {
+            margin: 0px 0 20px 0;
+          }
+        </style>
+        <div class="background" style="">
+        </div>
+        <div class="content">
+          <div id="item_000000004e00b72b0000000000000960_1" class="item g-1-125-1 text heading">
+
+          </div>
+          <div id="item_000000004e00b72b0000000000000960_2" class="item g-1-125-2 text subheading">
+            <h2><br></h2><br /><br />
+            <h2 class="ql-align-center"><span style="letter-spacing: normal; color: rgb(0, 0, 0);">For example, when
+                registering for the webpage, do users look at the security hints, or see what they agree to by clicking
+                the button carefully? It was measured by how long they gazed or the mouse cursor stopped on the
+                elements.
+
+
+              </span></h2>
+
+            <br /><br /><br /><br /><br /><br /><br /><br /><br />
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <!-- demo 3 forms -->
+
+      <div class="block_000000004e00b72b0000000000000960 block framed align-x-center align-y-center animated header"
+        style="padding:80px 0px 0px;" on-insert="block:setup">
+        <style>
+          .block_000000004e00b72b0000000000000960>.content {
+            display: grid;
+            grid-template-columns: repeat(0, 1fr);
+          }
+
+          #item_000000004e00b72b0000000000000960_1 {
+            letter-spacing: -0.04em;
+            line-height: 1.41;
+            font-family: Manrope;
+            --secondary-font-family: Manrope;
+            font-size: 3.1em;
+          }
+
+          #item_000000004e00b72b0000000000000960_2 {}
+
+          #item_000000004e00b72b0000000000000960_3 {}
+
+          .phone .block_000000004e00b72b0000000000000960>.content {
+            grid-template-columns: repeat(0, 1fr);
+          }
+
+          .phone #item_000000004e00b72b0000000000000960_1 {
+            font-size: 7vw;
+          }
+
+          .phone #item_000000004e00b72b0000000000000960_2 {
+            font-size: 5vw;
+          }
+
+          .phone #item_000000004e00b72b0000000000000960_3 {
+            margin: 0px 0 20px 0;
+          }
+        </style>
+        <div class="background" style="">
+        </div>
+        <div class="content">
+          <div id="item_000000004e00b72b0000000000000960_1" class="item g-1-125-1 text heading">
+            <h1 class="ql-align-center">Insight of the Human Computer Interaction</h1>
+          </div>
+          <div id="item_000000004e00b72b0000000000000960_2" class="item g-1-125-2 text subheading">
+            <h2><br></h2>
+            <h2 class="ql-align-center"><span style="letter-spacing: normal; color: rgb(0, 0, 0);">With the tracker and
+                data, we can see if their mouse movements go along with their eye gaze, or if their mouse only stopped
+                at one place.</span></h2>
+          </div> <br /><br /><br /><br />
+        </div>
+      </div>
+
+      <br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <div>
+        <img class="lazy" data-src="images/df/demo2.png" width="100%" height="100%" />
+
+        <div style="margin-top: 10px; display: flex; align-items: center; margin-left: 1%;">
+          <div style="display: flex; align-items: center; margin-right: 10px;">
+            <div style="width: 15px; height: 15px; border-radius: 50%; background-color: red; margin-right: 5px;">
+            </div>
+            <span>Eye Movement</span>
+          </div>
+          <div style="display: flex; align-items: center; margin-right: 10px;">
+            <div style="width: 15px; height: 15px; border-radius: 50%; background-color: blue; margin-right: 5px;">
+            </div>
+            <span>Mouse Movement</span>
+          </div>
+          <div style="display: flex; align-items: center; margin-right: 10px;">
+            <div
+              style="width: 20px; height: 20px; border-radius: 50%; background-color: rgb(255, 255, 255); margin-right: 5px; color: rgb(0, 0, 0); display: flex; align-items: center; justify-content: center; font-size: 12px;">
+              <span>no.</span>
+            </div>
+            <span>Time Period</span>
+          </div>
+        </div>
+      </div><br /><br /><br /><br /><br />
+
+
+
+
+      <!-- demo 3 forms -->
+
+      <div class="block_000000004e00b72b0000000000000960 block framed align-x-center align-y-center animated header"
+        style="padding:80px 0px 0px;" on-insert="block:setup">
+        <style>
+          .block_000000004e00b72b0000000000000960>.content {
+            display: grid;
+            grid-template-columns: repeat(0, 1fr);
+          }
+
+          #item_000000004e00b72b0000000000000960_1 {
+            letter-spacing: -0.04em;
+            line-height: 1.41;
+            font-family: Manrope;
+            --secondary-font-family: Manrope;
+            font-size: 3.1em;
+          }
+
+          #item_000000004e00b72b0000000000000960_2 {}
+
+          #item_000000004e00b72b0000000000000960_3 {}
+
+          .phone .block_000000004e00b72b0000000000000960>.content {
+            grid-template-columns: repeat(0, 1fr);
+          }
+
+          .phone #item_000000004e00b72b0000000000000960_1 {
+            font-size: 7vw;
+          }
+
+          .phone #item_000000004e00b72b0000000000000960_2 {
+            font-size: 5vw;
+          }
+
+          .phone #item_000000004e00b72b0000000000000960_3 {
+            margin: 0px 0 20px 0;
+          }
+        </style>
+        <div class="background" style="">
+        </div>
+        <div class="content">
+          <div id="item_000000004e00b72b0000000000000960_1" class="item g-1-125-1 text heading">
+            <br /><br /><br />
+            <h1 class="ql-align-center"> </h1><br />
+
+            <div class="button-container">
+              <a href="https://digitfurns-7b9ae.web.app/" target="_blank">
+                <button type="button">▶ Go to DigitFurns.</button>
+              </a>
+            </div>
+
+          </div>
+          <div id="item_000000004e00b72b0000000000000960_2" class="item g-1-125-2 text subheading">
+            <h2><br></h2>
+            <h2 class="ql-align-center"><span style="letter-spacing: normal; color: rgb(0, 0, 0);">
+                You could try out the react webpage <br />(without the eye gaze tracking part)</span></h2>
+          </div> <br /><br /><br /><br />
+        </div>
+      </div>
+
+      <br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+
+
+
+
+
+
+
+      <div class="block_000000004e00b72b0000000000000960 block framed align-x-center align-y-center animated header"
+        style="padding:80px 0px 0px;" on-insert="block:setup">
+        <style>
+          .block_000000004e00b72b0000000000000960>.content {
+            display: grid;
+            grid-template-columns: repeat(0, 1fr);
+          }
+
+          #item_000000004e00b72b0000000000000960_1 {
+            letter-spacing: -0.04em;
+            line-height: 1.41;
+            font-family: Manrope;
+            --secondary-font-family: Manrope;
+            font-size: 3.1em;
+          }
+
+          #item_000000004e00b72b0000000000000960_2 {}
+
+          #item_000000004e00b72b0000000000000960_3 {}
+
+          .phone .block_000000004e00b72b0000000000000960>.content {
+            grid-template-columns: repeat(0, 1fr);
+          }
+
+          .phone #item_000000004e00b72b0000000000000960_1 {
+            font-size: 7vw;
+          }
+
+          .phone #item_000000004e00b72b0000000000000960_2 {
+            font-size: 5vw;
+          }
+
+          .phone #item_000000004e00b72b0000000000000960_3 {
+            margin: 0px 0 20px 0;
+          }
+        </style>
+        <div class="background" style="">
+        </div>
+        <div class="content">
+          <div id="item_000000004e00b72b0000000000000960_1" class="item g-1-125-1 text heading">
+            <h1 class="ql-align-center">The Paper</h1>
+          </div>
+          <div id="item_000000004e00b72b0000000000000960_2" class="item g-1-125-2 text subheading">
+            <h2><br></h2>
+            <h2 class="ql-align-center"><span style="letter-spacing: normal; color: rgb(0, 0, 0);">
+                You could see the whole research paper if you're interested!</span></h2>
+          </div>
+        </div>
+      </div><br /><br /><br /><br /><br />
+
+
+
+
+
+
+
+      <div class="block_000000004e00b72b0000000000000960 block framed align-x-center align-y-center animated header"
+        style="padding:80px 0px 0px;" on-insert="block:setup">
+        <style>
+          .block_000000004e00b72b0000000000000960>.content {
+            display: grid;
+            grid-template-columns: repeat(0, 1fr);
+          }
+
+          #item_000000004e00b72b0000000000000960_1 {
+            letter-spacing: -0.04em;
+            line-height: 1.41;
+            font-family: Manrope;
+            --secondary-font-family: Manrope;
+            font-size: 3.1em;
+          }
+
+          #item_000000004e00b72b0000000000000960_2 {}
+
+          #item_000000004e00b72b0000000000000960_3 {}
+
+          .phone .block_000000004e00b72b0000000000000960>.content {
+            grid-template-columns: repeat(0, 1fr);
+          }
+
+          .phone #item_000000004e00b72b0000000000000960_1 {
+            font-size: 7vw;
+          }
+
+          .phone #item_000000004e00b72b0000000000000960_2 {
+            font-size: 5vw;
+          }
+
+          .phone #item_000000004e00b72b0000000000000960_3 {
+            margin: 0px 0 20px 0;
+          }
+        </style>
+        <div class="background" style="">
+        </div>
+        <div class="content">
+
+          <div id="item_000000004e00b72b0000000000000960_2" class="item g-1-125-2 text subheading">
+            <embed src="images/df/thesis.pdf#statusbar=1&toolbar=1&navpanes=0" type="application/pdf" width="560"
+              height="600px" />
+            <br />
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="block_000000004e00b72b0000000000000960 block framed align-x-center align-y-center animated header"
+        style="padding:80px 0px 0px;" on-insert="block:setup">
+        <style>
+          .block_000000004e00b72b0000000000000960>.content {
+            display: grid;
+            grid-template-columns: repeat(0, 1fr);
+          }
+
+          #item_000000004e00b72b0000000000000960_1 {
+            letter-spacing: -0.04em;
+            line-height: 1.41;
+            font-family: Manrope;
+            --secondary-font-family: Manrope;
+            font-size: 3.1em;
+          }
+
+          #item_000000004e00b72b0000000000000960_2 {}
+
+          #item_000000004e00b72b0000000000000960_3 {}
+
+          .phone .block_000000004e00b72b0000000000000960>.content {
+            grid-template-columns: repeat(0, 1fr);
+          }
+
+          .phone #item_000000004e00b72b0000000000000960_1 {
+            font-size: 7vw;
+          }
+
+          .phone #item_000000004e00b72b0000000000000960_2 {
+            font-size: 5vw;
+          }
+
+          .phone #item_000000004e00b72b0000000000000960_3 {
+            margin: 0px 0 20px 0;
+          }
+        </style>
+        <div class="background" style="">
+        </div>
+        <div class="content">
+          <div id="item_000000004e00b72b0000000000000960_1" class="item g-1-125-1 text heading">
+            <h1 class="ql-align-center"> </h1>
+          </div>
+          <div id="item_000000004e00b72b0000000000000960_2" class="item g-1-125-2 text subheading">
+            <h2><br></h2>
+            <h2 class="ql-align-center"><span style="letter-spacing: normal; color: rgb(0, 0, 0);"> </span></h2>
+          </div>
+        </div>
+      </div><br /><br /><br /><br /><br />
+
+
+
+
+
+      <div
+        class="block_000000004e00b72b000000000000090e block framed align-x-center align-y-center animated socialLinks social"
+        style="padding:80px 0px 125px;" on-insert="block:setup">
+        <style>
+          .block_000000004e00b72b000000000000090e>.content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+          }
+
+          #item_000000004e00b72b000000000000090e_1 {
+            grid-area: 1 / 1 / 2 / 2;
+            letter-spacing: 0.1em;
+            line-height: 2;
+            font-size: 1.8em;
+          }
+
+          #item_000000004e00b72b000000000000090e_2 {
+            grid-area: 1 / 2 / 2 / 3;
+          }
+
+          .phone .block_000000004e00b72b000000000000090e>.content {
+            grid-template-columns: repeat(1, 1fr);
+          }
+
+          .phone #item_000000004e00b72b000000000000090e_1 {
+            grid-area: 1 / 1 / 2 / 2;
+          }
+
+          .phone #item_000000004e00b72b000000000000090e_2 {
+            grid-area: 2 / 1 / 3 / 2;
+          }
+        </style>
+
+        <div class="background" style="">
+
+        </div>
+
+
+        <div class="content">
+
+
+
+
+
+          <div id="item_000000004e00b72b000000000000090e_1" class="item g-1-135-1 text headline">
+            <h4 class="ql-align-center"><br></h4>
+            <h4 class="ql-align-center">github.com/carmanwong/digitalfurn-onlinestore</h4>
+          </div>
+          <div id="item_000000004e00b72b000000000000090e_2" class="container">
+            <ul class="socialLinks">
+
+              <li>
+                <a href="https://github.com/carmanwong/digitalfurn-onlinestore" target="_blank"><span
+                    class="icon outline gitHub"></span></a>
+              </li>
+
+              <li>
+                <a href="https://www.linkedin.com/in/carman33/" target="_blank"><span
+                    class="icon outline linkedIn"></span></a>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+      <div class="block_000000004e00b72b0000000000000960 block framed align-x-center align-y-center animated header"
+        style="padding:80px 0px 0px;" on-insert="block:setup">
+        <style>
+          .block_000000004e00b72b0000000000000960>.content {
+            display: grid;
+            grid-template-columns: repeat(0, 1fr);
+          }
+
+          #item_000000004e00b72b0000000000000960_1 {
+            letter-spacing: -0.04em;
+            line-height: 1.41;
+            font-family: Manrope;
+            --secondary-font-family: Manrope;
+            font-size: 3.1em;
+          }
+
+          #item_000000004e00b72b0000000000000960_2 {}
+
+          #item_000000004e00b72b0000000000000960_3 {}
+
+          .phone .block_000000004e00b72b0000000000000960>.content {
+            grid-template-columns: repeat(0, 1fr);
+          }
+
+          .phone #item_000000004e00b72b0000000000000960_1 {
+            font-size: 7vw;
+          }
+
+          .phone #item_000000004e00b72b0000000000000960_2 {
+            font-size: 5vw;
+          }
+
+          .phone #item_000000004e00b72b0000000000000960_3 {
+            margin: 0px 0 20px 0;
+          }
+        </style>
+        <div class="background" style="">
+        </div>
+        <div class="content">
+
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+  <script src="https://static.cmcdn.net/libs/player/3.8.1/hls.js"></script>
+  <script src="https://static.cmcdn.net/libs/corejs/2.6.0/corejs.js"
+    integrity="sha256-QINPIB/5r50oO3HftMC6FzCzYFYS93iHgSdO1op/zMM=" crossorigin></script>
+  <script src="https://static.cmcdn.net/libs/router/1.6.0/router.js"
+    integrity="sha256-4IUSi5DVzvBoIJVNfZ416+yuCOs+cry22iJG94eaqW8=" crossorigin></script>
+  <script src="https://static.cmcdn.net/libs/gestures/0.6.0/gestures.js"
+    integrity="sha256-ylEa69hezIFUAga1cMRcngK6Tf9K+HJgzHUSPswYKoU=" crossorigin></script>
+  <script src="https://static.cmcdn.net/23/1.0.37/scripts/vendor/anime.js" crossorigin></script>
+  <script src="https://static.cmcdn.net/23/1.0.37/scripts/vendor/swiper.js" crossorigin></script>
+  <script src="https://static.cmcdn.net/libs/cursor/0.6.3/cursor.js"
+    integrity="sha256-K3IY3QiVV2UvpT+BaPTD2YjNCx5nT5LLJvNqGQ3L3Is=" crossorigin></script>
+  <script src="https://static.cmcdn.net/libs/lightbox/0.21.0/lightbox.js"
+    integrity="sha256-UWzkXO4rZ8YccWhO0Aa8cCRUsyIWBthR7Fx4Q4JDwVo=" crossorigin></script>
+  <script src="https://static.cmcdn.net/libs/forms/3.16.0/forms.js"
+    integrity="sha256-FSdk3PBD2/fnr0GK52OCwpR4nXh4QsNA0NGXbopNeg0=" crossorigin></script>
+  <script src="https://static.cmcdn.net/libs/scrollable/3.4.0/scrollable.js"
+    integrity="sha256-baiuPcjdbyEwBScpM1XFcd3KntTAMdNFrfEtB8+Qpm4=" crossorigin></script>
+  <script src="https://static.cmcdn.net/libs/player/3.8.1/player.js"
+    integrity="sha256-5eC5ruDiSOZ8vs10G8QfH7KRtp3Rt8rYNhCUQE/6tPk=" crossorigin></script>
+  <script src="https://static.cmcdn.net/libs/lazyjs/2.5.0/lazyjs.js"
+    integrity="sha256-t7NcyflstmZkZoux0P69OjKyeLS1imfynoTPyePOUDI=" crossorigin></script>
+  <script src="https://static.cmcdn.net/23/1.0.37/scripts/chroma.js" crossorigin></script>
+  <script src="https://static.cmcdn.net/23/1.0.37/scripts/contrast.js" crossorigin></script>
+  <script src="https://static.cmcdn.net/23/1.0.37/scripts/functions.js" crossorigin></script>
+  <script src="https://static.cmcdn.net/23/1.0.37/scripts/fitty.js" crossorigin></script>
+  <script src="https://static.cmcdn.net/23/1.0.37/scripts/blocks.js" crossorigin></script>
+  <script src="https://static.cmcdn.net/23/1.0.37/scripts/transitions.js" crossorigin></script>
+  <script src="https://static.cmcdn.net/23/1.0.37/scripts/site/Navigation.js" crossorigin></script>
+  <script src="https://static.cmcdn.net/23/1.0.37/scripts/components/Flipbook.js" crossorigin></script>
+  <script src="https://static.cmcdn.net/23/1.0.37/scripts/components/BeforeAfterBlock.js" crossorigin></script>
+  <script src="https://static.cmcdn.net/23/1.0.37/scripts/browser.js" crossorigin></script>
+  <script src="https://static.cmcdn.net/23/1.0.37/scripts/app.js" crossorigin></script>
+
+
+
+  <script>
+    "use strict";
+    // Your JavaScript code goes here
+
+    // Select all slides
+    const slides = document.querySelectorAll(".slide");
+
+    // loop through slides and set each slides translateX
+    slides.forEach((slide, indx) => {
+      slide.style.transform = `translateX(${indx * 100}%)`;
+    });
+
+    // select next slide button
+    const nextSlide = document.querySelector(".btn-next");
+
+    // current slide counter
+    let curSlide = 0;
+    // maximum number of slides
+    let maxSlide = slides.length - 1;
+
+    // add event listener and navigation functionality
+    nextSlide.addEventListener("click", function () {
+      // check if current slide is the last and reset current slide
+      if (curSlide === maxSlide) {
+        curSlide = 0;
+      } else {
+        curSlide++;
+      }
+
+      // move slide by -100%
+      slides.forEach((slide, indx) => {
+        slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+      });
+    });
+
+    // select prev slide button
+    const prevSlide = document.querySelector(".btn-prev");
+
+    // add event listener and navigation functionality
+    prevSlide.addEventListener("click", function () {
+      // check if current slide is the first and reset current slide to last
+      if (curSlide === 0) {
+        curSlide = maxSlide;
+      } else {
+        curSlide--;
+      }
+
+      // move slide by 100%
+      slides.forEach((slide, indx) => {
+        slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+      });
+    });
+  </script>
+
+
+
+  <!-- script for slider2 -->
+  <script>
+    "use strict";
+    // Your JavaScript code goes here
+
+    // Select all slides
+    const slides2 = document.querySelectorAll(".slide2");
+
+    // loop through slides and set each slides translateX
+    slides2.forEach((slide2, indx) => {
+      slide2.style.transform = `translateX(${indx * 100}%)`;
+    });
+
+    // select next slide button
+    const nextSlide2 = document.querySelector(".btn-next2");
+
+    // current slide counter
+    let curSlide2 = 0;
+    // maximum number of slides
+    let maxSlide2 = slides2.length - 1;
+
+    // add event listener and navigation functionality
+    nextSlide2.addEventListener("click", function () {
+      // check if current slide is the last and reset current slide
+      if (curSlide2 === maxSlide2) {
+        curSlide2 = 0;
+      } else {
+        curSlide2++;
+      }
+
+      // move slide by -100%
+      slides2.forEach((slide2, indx) => {
+        slide2.style.transform = `translateX(${100 * (indx - curSlide2)}%)`;
+      });
+    });
+
+    // select prev slide button
+    const prevSlide2 = document.querySelector(".btn-prev2");
+
+    // add event listener and navigation functionality
+    prevSlide2.addEventListener("click", function () {
+      // check if current slide is the first and reset current slide to last
+      if (curSlide2 === 0) {
+        curSlide2 = maxSlide2;
+      } else {
+        curSlide2--;
+      }
+
+      // move slide by 100%
+      slides2.forEach((slide2, indx) => {
+        slide2.style.transform = `translateX(${100 * (indx - curSlide2)}%)`;
+      });
+    });
+  </script>
+
+
+
+</body>
+
+<!-- Mirrored from carmanwong.portfolio.site/android-app-tweets-around-you by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Nov 2021 13:10:58 GMT -->
+
+</html>
