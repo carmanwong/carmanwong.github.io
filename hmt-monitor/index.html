@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HMT Monitor Entry</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4efe8;
+      --card: rgba(255, 252, 247, 0.94);
+      --text: #1f1b18;
+      --muted: #6f655c;
+      --line: rgba(31, 27, 24, 0.12);
+      --accent: #0f766e;
+      --accent-2: #b45309;
+      --shadow: 0 24px 60px rgba(31, 27, 24, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", "PingFang TC", "Noto Sans TC", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(15, 118, 110, 0.18), transparent 32%),
+        radial-gradient(circle at top right, rgba(180, 83, 9, 0.16), transparent 28%),
+        linear-gradient(180deg, #fbf6ef 0%, var(--bg) 100%);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .panel {
+      width: min(720px, 100%);
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: 28px;
+      backdrop-filter: blur(8px);
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.05;
+    }
+
+    .lead {
+      margin: 14px 0 0;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    .status-card {
+      margin-top: 24px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 18px;
+      background: rgba(255, 255, 255, 0.7);
+    }
+
+    .status-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-weight: 700;
+      font-size: 13px;
+      background: rgba(15, 118, 110, 0.12);
+      color: var(--accent);
+    }
+
+    .badge.warn {
+      background: rgba(180, 83, 9, 0.14);
+      color: var(--accent-2);
+    }
+
+    .url {
+      margin: 18px 0 0;
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: #fff;
+      border: 1px solid var(--line);
+      overflow-wrap: anywhere;
+      font-size: 15px;
+    }
+
+    .actions {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 18px;
+      border-radius: 999px;
+      border: 0;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .button.primary {
+      background: var(--text);
+      color: #fff;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--line);
+    }
+
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .note {
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+  <main class="panel">
+    <p class="eyebrow">HMT AI Monitor</p>
+    <h1>Fixed Entry</h1>
+    <p class="lead">
+      This page stays the same.
+      It always points to the latest live monitor tunnel from the bot machine.
+    </p>
+
+    <section class="status-card">
+      <div class="status-row">
+        <span id="statusBadge" class="badge">Loading...</span>
+        <span id="updatedAt" class="meta"></span>
+      </div>
+
+      <div id="urlText" class="url">Loading latest monitor link...</div>
+
+      <div class="actions">
+        <a id="openButton" class="button primary" href="#" target="_blank" rel="noopener noreferrer">Open Latest Monitor</a>
+        <button id="refreshButton" class="button secondary" type="button">Refresh Status</button>
+      </div>
+
+      <div class="meta">
+        <div id="stateText">Checking current tunnel status...</div>
+        <div id="noteText"></div>
+      </div>
+    </section>
+
+    <p class="note">
+      Login is still protected on the monitor itself.
+      Save this fixed page, not the changing tunnel URL.
+    </p>
+  </main>
+
+  <script>
+    const statusBadge = document.getElementById("statusBadge");
+    const updatedAt = document.getElementById("updatedAt");
+    const urlText = document.getElementById("urlText");
+    const openButton = document.getElementById("openButton");
+    const refreshButton = document.getElementById("refreshButton");
+    const stateText = document.getElementById("stateText");
+    const noteText = document.getElementById("noteText");
+
+    function setStatus(state, url, note, updated) {
+      const online = state === "online" && !!url;
+      statusBadge.textContent = online ? "Tunnel Online" : `Tunnel ${state || "Unknown"}`;
+      statusBadge.className = online ? "badge" : "badge warn";
+      urlText.textContent = url || "No live tunnel URL yet.";
+      openButton.href = url || "#";
+      openButton.style.pointerEvents = online ? "auto" : "none";
+      openButton.style.opacity = online ? "1" : "0.5";
+      stateText.textContent = online
+        ? "Latest tunnel is ready. Tap the button to open the live monitor."
+        : "Tunnel is not currently ready. Refresh again in a moment.";
+      noteText.textContent = note ? `Note: ${note}` : "";
+      updatedAt.textContent = updated ? `Updated: ${updated}` : "";
+    }
+
+    async function loadStatus() {
+      try {
+        const response = await fetch(`./status.json?ts=${Date.now()}`, {
+          cache: "no-store"
+        });
+        const data = await response.json();
+        setStatus(data.state, data.url, data.note, data.updatedAt);
+      } catch (error) {
+        setStatus("error", "", "Failed to load latest status.", "");
+      }
+    }
+
+    refreshButton.addEventListener("click", loadStatus);
+    loadStatus();
+    setInterval(loadStatus, 30000);
+  </script>
+</body>
+</html>
