@@ -1,8 +1,8 @@
 {
-  "state": "starting",
-  "url": "",
+  "state": "online",
+  "url": "https://622da2b9e5ab35.lhr.life",
   "targetPort": "4318",
   "tunnelHost": "localhost.run",
-  "updatedAt": "",
-  "note": "Waiting for first sync from bot machine."
+  "updatedAt": "2026-04-07T05:20:22Z",
+  "note": "tunnel connected"
 }
