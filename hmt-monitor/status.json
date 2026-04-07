@@ -1,8 +1,8 @@
 {
-  "state": "starting",
+  "state": "connecting",
   "url": "",
   "targetPort": "4318",
   "tunnelHost": "localhost.run",
-  "updatedAt": "2026-04-07T05:28:23Z",
-  "note": "starting tunnel"
+  "updatedAt": "2026-04-07T05:28:25Z",
+  "note": "opening ssh tunnel"
 }
