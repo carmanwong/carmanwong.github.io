@@ -1,8 +1,8 @@
 {
-  "state": "connecting",
-  "url": "",
+  "state": "online",
+  "url": "https://cf28292ee84058.lhr.life",
   "targetPort": "4318",
   "tunnelHost": "localhost.run",
-  "updatedAt": "2026-09-02T05:45:48Z",
-  "note": "opening ssh tunnel"
+  "updatedAt": "2026-09-02T05:45:53Z",
+  "note": "tunnel connected"
 }
