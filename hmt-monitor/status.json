@@ -1,8 +1,8 @@
 {
-  "state": "reconnecting",
-  "url": "https://fcbca2c3244434.lhr.life",
+  "state": "connecting",
+  "url": "",
   "targetPort": "4318",
   "tunnelHost": "localhost.run",
-  "updatedAt": "2026-09-06T09:27:42Z",
-  "note": "ssh tunnel disconnected; reconnecting"
+  "updatedAt": "2026-09-06T09:27:48Z",
+  "note": "opening ssh tunnel"
 }
