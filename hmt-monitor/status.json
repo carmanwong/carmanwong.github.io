@@ -1,8 +1,8 @@
 {
-  "state": "reconnecting",
-  "url": "https://48d2d1feac2606.lhr.life",
+  "state": "connecting",
+  "url": "",
   "targetPort": "4318",
   "tunnelHost": "localhost.run",
-  "updatedAt": "2026-10-08T06:47:56Z",
-  "note": "ssh tunnel disconnected; reconnecting"
+  "updatedAt": "2026-10-08T06:48:02Z",
+  "note": "opening ssh tunnel"
 }
