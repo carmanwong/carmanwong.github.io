@@ -1,8 +1,8 @@
 {
   "state": "online",
-  "url": "https://db53cdaa7c7c07.lhr.life",
+  "url": "https://e30adf822f4dde.lhr.life",
   "targetPort": "4318",
   "tunnelHost": "localhost.run",
-  "updatedAt": "2026-10-25T23:06:38Z",
+  "updatedAt": "2026-10-25T23:12:20Z",
   "note": "tunnel connected"
 }
